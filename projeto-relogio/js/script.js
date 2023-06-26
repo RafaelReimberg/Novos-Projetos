@@ -16,14 +16,14 @@ var relogio = setInterval(
 
         middayValue = (hr > 12) ? "PM" : "AM";
 
-        if(hr == 0){
-            hr = 12;
+        if(hora == 0){
+            hora = 12;
         }
-        else if(hr > 12){
-            hr -= 12;
+        else if(hora > 12){
+            hora -= 12;
         }
         
-        hr = (hr < 10) ? "0" + hr : hr;
+        hora = (hora < 10) ? "0" + hora : hora;
         min = (min < 10) ? "0" + min : min;
         sec = (sec < 10) ? "0" + sec : sec;
 
