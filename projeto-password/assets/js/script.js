@@ -6,7 +6,7 @@
     let password = document.querySelector('.password');
 
     let helperText = {
-        charLength: document.querySelector('.helper-text .lenght'),
+        charLength: document.querySelector('.helper-text .length'),
         lowercase: document.querySelector('.helper-text .lowercase'),
         uppercase: document.querySelector('.helper-text .uppercase'),
         special: document.querySelector('.helper-text .special')
@@ -76,6 +76,7 @@
                 " "
             );
         }
+        
     }
 
     function hasClass(el, className) {
@@ -85,7 +86,6 @@
         } else {
             new RegExp("(^| )" + className + "( |$)", "gi").test(el && el.className);
         }
-
     }
 
     function patternTest(pattern, response) {
@@ -102,28 +102,21 @@
         } else if (el && el.className) {
             el.className += " " + className;
         }
-    }
-
-
-    let senha = $("#senha");
-    let olho= $("#olho");
-
-    olho.mousedown(function() {
-    senha.attr("type", "text");
-    });
-
-    olho.mouseup(function() {
-    senha.attr("type", "password");
-    });
-    // para evitar o problema de arrastar a imagem e a senha continuar exposta, 
-    //citada pelo nosso amigo nos comentários
-    $("#olho").mouseout(function() { 
-    $("#senha").attr("type", "password");
-    });
-
+    }   
+    
 });
 })();
 
+    const password1 = document.getElementById('password');
+    const icon = document.getElementById('icon');
 
-
-
+    function showHide(){
+        if(password1.type === 'password'){
+            password1.setAttribute('type','text');
+            icon.classList.add('hide')
+        }
+        else{
+            password1.setAttribute('type', 'password');
+            icon.classList.remove('hide')
+        }
+    };        

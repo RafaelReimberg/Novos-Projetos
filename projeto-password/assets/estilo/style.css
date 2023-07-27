@@ -1,13 +1,22 @@
 @charset "UTF-8";
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 form {
     max-width: 320px;
     width: auto;
     height: 240px;
     margin: auto;
+    margin-top: 50px;
     padding: 32px;
     background: #fff;
-    border-radius: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 form label{
@@ -16,15 +25,31 @@ form label{
     margin-bottom: 10px;
 }
 
+form input{
+    border: none;
+}
+
+form input:hover{
+    border: none;
+}
+
+form input:focus{
+    outline: 0;
+}
+
 form input[type=password]{
     display: block;
     height: 36px;
-    margin-bottom: 8px;
-    padding: 10px;
-    width: 100%;
-    border: 2px solid #ccc;
+    width: 84%;
     font-size: 16px;
-    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+form input[type=text]{
+    display: block;
+    height: 36px;
+    width: 84%;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -36,11 +61,35 @@ form ul.helper-text{
     color: #808080;
 }
 
-form ul.helper.text li.valid{
+form ul.helper-text li.valid{
     color: #1ab23e;
     text-decoration-line: line-through;
+    list-style: none;
 }
 
 form.valid input{
     border: 2px solid #1fd34a;
 }
+
+.box-password{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+div#icon{
+    background: url('../imagem/show.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+div#icon.hide{
+    background: url('../imagem/hide.png');
+    background-size: cover;
+    margin: auto;
+    cursor: pointer;
+}    

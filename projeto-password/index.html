@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password</title>
     <link rel="stylesheet" href="assets/estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
 </head>
 <body>
     <form>
         <label for="password">Senha: </label>
-        <input type="password" name="password" class="password" id="senha">
-        <img id="olho" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII="
-/>
-
+        <section class="box-password">
+            <input type="password" class="password" id="password" placeholder="Digite sua senha:">
+            <div id="icon" onclick="showHide()"></div>
+        </section>
+        
         <ul class="helper-text">
             <li class="length">Deve ter no mínimo 8 caracteres</li>
-            <li class="lowecase">Deve ter conter letras minusculas</li>
+            <li class="lowercase">Deve ter conter letras minusculas</li>
             <li class="uppercase">Deve ter conter letras maiusculas</li>
             <li class="special">Deve ter número ou caracteres especial</li>
         </ul>
     </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
