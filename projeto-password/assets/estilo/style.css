@@ -40,7 +40,8 @@ form input:focus{
 form input[type=password]{
     display: block;
     height: 36px;
-    width: 84%;
+    width: 81%;
+    margin-left: 10px;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -48,7 +49,8 @@ form input[type=password]{
 form input[type=text]{
     display: block;
     height: 36px;
-    width: 84%;
+    width: 81%;
+    margin-left: 10px;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -59,6 +61,7 @@ form ul.helper-text{
     font-size: 12px;
     line-height: 22px;
     color: #808080;
+    list-style: none;
 }
 
 form ul.helper-text li.valid{
