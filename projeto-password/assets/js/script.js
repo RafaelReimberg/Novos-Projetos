@@ -107,16 +107,16 @@
 });
 })();
 
-    const password1 = document.getElementById('password');
+    const pass = document.getElementById('password');
     const icon = document.getElementById('icon');
 
     function showHide(){
-        if(password1.type === 'password'){
-            password1.setAttribute('type','text');
+        if(pass.type === 'password'){
+            pass.setAttribute('type','text');
             icon.classList.add('hide')
         }
         else{
-            password1.setAttribute('type', 'password');
+            pass.setAttribute('type', 'password');
             icon.classList.remove('hide')
         }
     };        
