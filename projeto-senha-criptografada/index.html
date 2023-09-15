@@ -9,8 +9,10 @@
         <h1>Gerador de Senha Criptografada</h1>
         <form id="passwordForm">
             <label for="password">Senha:</label>
-            <input type="password" id="password" required>
-            <div id="icon" onclick="showHide()"></div>
+            <section class="box-password">
+                <input type="password" id="password" required>
+                <div id="icon" onclick="showHide()"></div>
+            </section>
             <button type="button" onclick="gerarSenhaCriptografada()">Gerar Senha Criptografada</button>
         </form>
         <p>Senha Criptografada: <span id="senhaCriptografada"></span></p>
