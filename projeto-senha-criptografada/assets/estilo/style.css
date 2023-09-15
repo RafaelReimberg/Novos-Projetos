@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Saira:wght@100&display=swap');
 
 body {
     font-family: 'Russo One', sans-serif;
@@ -7,11 +8,20 @@ body {
 }
 .container {
     max-width: 700px;
-    margin: 0 auto;
+    height: 400px;
+    margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #91c6ff;
+}
+.box-password{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    /*border: 1px solid #ccc;*/
+    border-radius: 5px;
 }
 label {
     display: block;
@@ -23,13 +33,16 @@ input[type="password"] {
     padding: 10px;
     margin-bottom: 20px;
     border: none;
+    border-radius: 5px;
+    background: #b2d5fa;
 }
-
 form input[type=text]{
     height: 20px;
     width: 91%;
     padding: 10px;
     border: none;
+    border-radius: 5px;
+    background: #b2d5fa;
 }
 
 form input:hover{
@@ -39,7 +52,6 @@ form input:hover{
 form input:focus{
     outline: 0;
 }
-
 button {
     padding: 10px 20px;
     margin-top: 10px;
@@ -49,15 +61,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
-.box-password{
-    display: flex;
-    width: 100%;
-    height: 40px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
 div#icon{
     background: url('../imagem/show.png');
     background-size: cover;
@@ -73,4 +76,11 @@ div#icon.hide{
     height: 30px;
     margin: auto;
     cursor: pointer;
-}   
+}  
+#senhaCriptografada{
+    font-family: 'Saira', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;  
+}
