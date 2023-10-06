@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-password{
+    width: 245px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input{
+    margin: auto;
+    width: 220px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type=password]{
+    text-align: center;
+    font-size: 18px;
+}
+
+.cssteclado{
+    width: 245px;
+    margin: auto;
+    margin-top: 8px;
+    border: none;
+}
+button {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-width: thin;
+    margin: 10px;
+    width: 100px;
+}
