@@ -16,7 +16,7 @@ body, html{
     margin: auto;
     margin-top: 50px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(253, 59, 0);
 }
 
 input{
@@ -26,7 +26,7 @@ input{
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(253, 59, 0);
 }
 
 input[type=password]{
@@ -44,6 +44,7 @@ button {
     padding: 10px;
     font-weight: bold;
     background-color: #ffffff;
+    border: 1px solid rgb(253, 59, 0);
     border-radius: 5px;
     border-width: thin;
     margin: 10px;

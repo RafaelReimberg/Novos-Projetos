@@ -19,9 +19,8 @@ function shuffleArray(array) {
     const numero1 = numeros[i];
     const numero2 = numeros[i + 1];
     button.textContent = `${numero1} - ${numero2}`;
-    
         button.addEventListener("click", () => {
-        document.getElementById("pass").innerHTML = `${numero1} - ${numero2}`; 
+        document.getElementById("pass").textContent = `${numero1} - ${numero2}`; 
         //alert(`Você pressionou o botão ${numero1} - ${numero2}`);
         console.log(pass);
     });
@@ -36,19 +35,10 @@ function shuffleArray(array) {
   }
   
   const button = document.createElement("button");
-  button.textContent = `C`;
-  button.style.background = `red`;
-  const clearButton = document.querySelector("#pass");
-
-  buttons.forEach(function(button) {
-    button.addEventListener("click", function() {
-        passwordInput.value += button.textContent;
-    });
-});
-
-clearButton.addEventListener("click", function() {
-    passwordInput.value = "";
-});
+  button.textContent = `Limpar`;
+  button.style.background = `rgb(253, 59, 0)`;
+  button.style.color = `white`;
+  
         
   //button.addEventListener('click', clearButton);
     //function limparDados() {
