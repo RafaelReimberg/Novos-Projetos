@@ -47,10 +47,18 @@ input[type="text"]:focus {
     outline: 0;
 }
 
-.box-password{ 
+.box-password{
     display: flex;
     width: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+input[type="password"]{
+    border: 1px solid rgba(51, 50, 50, 0.185);
+    border-radius: 5px;
+}
+input[type="password"]:focus{
+    outline: 0;
 }
 
 div#icon{
@@ -61,6 +69,7 @@ div#icon{
     margin: auto;
     cursor: pointer;
 }
+
 div#icon.hide{
     background: url('../imagem/hide.png');
     background-size: cover;
